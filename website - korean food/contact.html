@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact us! -Kim's factory-</title>
+	<style type="text/css">
+		@import url("css/style.css");
+	</style>
+</head>
+<body>
+	
+	<div class="wrapper">
+
+		<input type="checkbox" id="nav_toggle">
+		<label class="nav_toggle" for="nav_toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html" target="_self" title="Home">&nbsp;Home&nbsp;</a></li>
+				<li><a href="bibimbap.html" target="_self" title="Bibimbap">&nbsp;Food 1&nbsp;</a></li>
+				<li><a href="bulgogi.html" target="_self" title="Bulgogi">&nbsp;Food 2&nbsp;</a></li>
+				<li><a href="contact.html" target="_self" title="Contact_us">&nbsp;Contact us&nbsp;</a></li>
+			</ul>
+		</nav>
+
+		<section>
+
+			<br><br>
+	
+			<h2>If you have any problems, please contact us.</h2> 
+			<h2>The information with * are required to submit your problems.</h2>
+	
+			<br>
+	
+			<fieldset>
+				<legend>Contact form</legend>
+				<form action="" method="get">
+					<label for="firstname">* Name: </label><input type="text" name="firstname" id="firstname" placeholder="first name" required>
+					<input type="text" name="lastname" id="lastname" placeholder="last name" required>
+					<br>
+					<label for="email">* e-mail: </label><input type="email" name="email" id="email" placeholder="aaa@bbb.com" required>
+					<br>
+					<label for="localdate">* Select date: </label><input type="datetime-local" name="localdate" id="localdate" required>
+					<br>
+					<label for="myfile">Attach files about your problem: </label><input type="file" name="myfile" id="myfile">
+					<br>
+					<label for="moreinfo">* If you have any comments and/or problems write here: </label><br><textarea rows="10" cols="70" name="moreinfo" id="moreinfo" required></textarea>
+					<br>
+					<input type="reset" value="Reset">
+					<input type="submit" value="Submit">
+				</form>
+			</fieldset>
+	
+			<br><br>
+	
+			<p>Our main office is in Åsögatan 117:</p>
+			<iframe width="500" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=%C3%A5s%C3%B6gatan%20117&t=k&z=15&ie=UTF8&iwloc=&output=embed"frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			<br><br>
+			<p>Contact us via e-mail: <a href="mailto:byung-guk.kim@cmeducations.se?subject=problem&body=Please write your name, e-mail address, and your problems correctly." title="Kim's factory: Contact us via e-mail">Click here</a></p>	
+			<p>Contact us via phone: <a href="tel:+46000" title="our phone number">+46000</a></p>
+	
+		</section>
+	</div>
+</body>
+</html>

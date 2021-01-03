@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Dancing+Script:400,700|Dosis:400,700&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+		
+.wrapper{font: 16px; font-family: 'Dosis', sans-serif; overflow-x: hidden;}
+
+.social li{display: inline-block;	padding: 10px;}
+
+.writings{color: #00FF18;
+		  left: 30px;
+		  font-family: 'Dosis', sans-serif;
+		  width: 75%;
+		  text-align: left;
+		  text-align: justify;}
+
+.gallery{display: grid;
+		 width: 75%;
+  		 height: auto;
+  		 grid-template-columns: auto auto auto;
+  		 align-content: start;
+  		 background-color: #757575;}
+
+.gallery > div{background-size: 10px 10px;}
+
+.row:after{clear:both;
+		   display:block;
+		   content:"";}
+
+h1{color: #FFFC00;
+   font-family: 'Anton', sans-serif;
+   font-size: 120px;}
+
+h2{color: #FFFC00;
+   font-family: 'Anton', sans-serif;
+   font-size: 32px;}
+
+h3{color: #00FF18;
+   font-family: 'Anton', sans-serif;
+   font-size: 22px;}
+		
+a{color: #fff;  
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration:none;}
+
+.container section{position: fixed;
+				   width: 100%;
+				   overflow: auto;
+				   height: 100%;
+				   padding: 100px;
+				   margin-left: 0;
+				   background-image:url("../images/DSC_2952.jpg");
+				   background-size: 100% 100%;
+				   text-align: center;
+			       transition: margin .3s;
+				   left: 0;}
+		
+ul{list-style:none;}
+		
+.buttons{width: 150px;
+		 position: fixed;
+		 top: 0;
+	     height: 100%;
+	     margin-left: -150px;
+		 background: #21CE7F;
+		 padding: 15px;
+		 transition: margin .3s;}
+		
+input[type=checkbox]{position: fixed; visibility: hidden;}
+		
+.navigation{display: block;
+			position: fixed;
+			top: 15px;
+			left: 0px;
+	     	height: 30px;
+			width: 40px;
+			z-index: 100;
+			margin-left: 10px;
+			transition: margin .3s;}
+		
+.navigation span{position: relative;
+				 display: block;
+			     height: 2px;
+				 width: 40px;
+				 background-color: #0024FF;
+				 transition: all .3s;}
+		
+.navigation span:nth-child(2){top: 12px;}
+		
+.navigation span:nth-child(3){top: 24px;}
+		
+input[type=checkbox]:checked ~  .navigation{margin-left: 150px;}
+		
+input[type=checkbox]:checked ~  .navigation span:nth-child(2){display: none;}
+		
+input[type=checkbox]:checked ~  .navigation span:nth-child(1){top: 12px; transform: rotate(45deg);}
+		
+input[type=checkbox]:checked ~  .navigation span:nth-child(3){top: 10px; transform: rotate(-45deg);}
+		
+input[type=checkbox]:checked ~  .container .buttons{margin-left: 0px;}
+		
+input[type=checkbox]:checked ~  .container section{margin-left: 150px;}
+
+nav.buttons ul ul{max-height:0;
+  			      overflow:hidden;
+  				  transition: max-height .3s;}
+
+nav.buttons ul li:hover > ul{max-height: 768px;
+  							 height:auto;}
+
+li a::after{content: '\21E9';
+	        transition: .2s;
+	        display: inline-block;
+	        margin-left: 5px;}
+li a:hover::after{content: '\21E9';
+		          transform: rotate(180deg);}
+li a:only-child::after{content: '';}
+
+
+
+
+@media screen and (min-width:769px){
+	.navigation{display:none;}
+
+	.row:after{clear:both;
+			   display:block;
+			   content:"";}
+
+	.container section{top: 0;
+					   background-image:url("../images/DSC_2952.jpg");
+				       background-size: 100% 100%;
+					   line-height: 32px;
+					   color: #00FF18;
+					   word-wrap: break-word !important;
+					   z-index: 10;}
+
+	nav.buttons{z-index:100;
+			    position: fixed;
+			    width: 100%;
+			    text-align: center;
+			    background:none;
+			    margin-left: 0;
+			    height: auto;}
+
+	nav.buttons ul{padding: 0;
+			       margin: 0;
+			       position: relative;
+			       list-style: none;}
+
+	nav.buttons ul li{display: inline-block;
+			          background-color: rgba(0,0,0,0.3);
+			      	  width: 200px;
+			      	  position: relative;}
+
+	nav.buttons a{display: block;
+			      padding: 0 10px;
+			      color: #fff;
+			      font-size: 16px;
+			      line-height: 55px;
+			      text-decoration: none;}
+
+	nav.buttons a:hover{background-color: #4949FF;}
+
+	nav.buttons ul ul{display:none;
+					  position: absolute;
+					  overflow: visible;
+					  top: 60px;
+					  margin-left: -100px;}
+
+	nav.buttons ul li:hover > ul{display: inherit;}	
+
+	nav.buttons ul ul li{width: 200px;
+						 float: none;
+						 display: list-item;
+						 position: relative;}
+
+	input[type=checkbox]:checked ~ .container section{margin-left:0px;}
+}

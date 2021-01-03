@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Byung Guk Kim">
+	<meta name="description" content="Contact form for Kim's Restaurant. Please write your informations correctly, or there might be misunderstanding.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact us! -Kim's Restaurant-</title>
+	<style type="text/css">
+		@import url(css/style.css);
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Kim's Restaurant</h1>
+	</header>
+	<nav>
+		<a href="https://sv.wikipedia.org/wiki/Sverige" target="_blank">Return to homepage</a>
+		<br><br>
+	</nav>
+	<section>
+		<p><strong>Write your Booking or comment here, or you can contact us via e-mail and phone below this page.</strong></p>
+		<div id="booking">
+			<fieldset>
+				<legend>Booking</legend>
+				<form method="get">
+					<p><b>Things marked with * must be written.</b></p>
+					<label for="name">* Your name: </label><input type="text" name="firstname" id="name" placeholder="First name" required>
+					<input type="text" name="lastname" id="lastname" placeholder="Last name" required>
+					<br><br>
+					<label for="age">* Your age: </label><input type="number" min="10" max="100" step="1" name="age" id="age" required>
+					<br><br>
+					<label for="email">* Your e-mail address: </label><input type="email" name="email" id="email" placeholder="aaa@bbb.com" required>
+					<br><br>
+					<label for="phonenumber">* Your phone number: </label><input type="text" name="phonenumber" id="phonenumber" placeholder="08-123-4567" required>
+					<br><br>
+					<label for="mobilenumber">Your mobile number: </label><input type="text" name="mobilenumber" id="mobileenumber" placeholder="073-123-4567">
+					<br><br>
+					<label for="place">* Select which restaurant you want to book.(Our main restaurant is in Åsögatan.): </label><select name="place" id="place" required>
+						<option value="asogatan">Åsögatan</option>
+						<option value="fridhemsplan">Fridhemsplan</option>
+						<option value="kungsgatan">Kungsgatan</option>
+						<option value="sveavagen">Sveavägen</option>
+						<option value="hamngatan">Hamngatan</option>
+					</select>
+					<br>
+					<p><b>* Number of guests:</b></p>
+					<label for="children">* Children: </label><input type="number" min="0" max="15" step="1" name="children" id="children" required>
+					<label for="adult">* Adult: </label><input type="number" min="0" max="15" step="1" name="adult" id="adult" required>
+					<br><br>
+					<label for="bookingdate">* Select date: </label><input type="datetime-local" name="bookingdate" id="bookingdate" required>
+					<br>
+					<p>Choose the table you wish to have.(<mark>There might be chance that you might not get the table you want.</mark><strong> No extra table fee will be needed.)</strong>:</p>
+					<input type="radio" name="choice" id="choice_one"><label for="choice_one">general   </label>
+					<input type="radio" name="choice" id="choice_two"><label for="choice_two">open garden   </label>
+					<input type="radio" name="choice" id="choice_three"><label for="choice_three">personal cabin</label>
+					<br><br>
+					<label for="allergies">If you or any other guests are allergic to something write here: </label><br><textarea rows="10" cols="70" name="allergies" id="allergies" value="Please write informations here precisely"></textarea>
+					<br><br>
+					<label for="moreinfo">If you have any comments and/or problems write here: </label><br><textarea rows="10" cols="70" name="moreinfo" id="moreinfo"></textarea>
+					<br><br>
+					<input type="reset" value="reset">
+					<input type="submit" value="book">
+				</form>
+			</fieldset>
+		</div>
+	</section>
+	<footer>
+		<div id="contact">
+			<h2>If you have any problems, don't hesitate to contact us:</h2>
+			<p>Our main restaurant is in Åsögatan 117:</p>
+			<iframe width="500" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=%C3%A5s%C3%B6gatan%20117&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			<p>Contact us via e-mail: <a href="mailto:byung-guk.kim@cmeducations.se?subject=Comment 1&body=Please your name, e-mail address, phone number and your comment correctly." title="Kim's restaurant: Contact us via e-mail">Click here</a></p>	
+			<p>Contact us via phone: <a href="tel:+46000" title="our phone number">+46000</a></p>
+		</div>
+	</footer>
+</body>
+</html>

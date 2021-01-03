@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Dancing+Script:400,700|Orbitron:400,700,900&display=swap');
+
+h1{font-family: 'Orbitron', sans-serif; font-size: 48px; font-style: normal;
+   text-align: center;
+   padding: 48px 48px 28px;}
+
+h2{font-family: 'Orbitron', sans-serif; font-size: 28px; font-style: italic;
+   text-align: center;
+   padding: 16px;}
+
+ul{font-family: 'Orbitron', sans-serif; font-size: 20px; font-style: normal;
+   list-style: none;
+   text-align: center;}
+
+li{display: inline-block;
+   padding: 30px;}
+
+a:link{color: #06FF00;}
+a:visited{color:#FFEA00;}
+a:hover{color: #217906; text-decoration: underline;}
+a:active{color: #FF00FF;}
+
+body{background-image: url("../images/backgroundimage.jpg");
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-attachment: scroll;
+	 background-size: cover;
+    }
+
+.main{font-family: 'Bree Serif', serif;
+	 font-size: 20px;
+	 font-weight: 400;
+	 text-align: justify; 
+	 line-height: 150%;
+	 margin: 16px 200px 16px;}
+
+.main >.img{text-align: center;}
+
+.main > .quote{font-family: 'Dancing Script', cursive;
+			   font-weight: 400;
+			   font-size: 28px;
+			   text-align: center;}
+
+.last{}
